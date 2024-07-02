@@ -1,0 +1,285 @@
+source,description
+data/image/doc231210997_page21_image1.png,"The image is a comprehensive overview of the RAG (Retrieval-Augmented Generation) ecosystem, prospect, paradigm, techniques, key issues, and evaluation.
+
+### RAG Ecosystem
+- **Downstream Tasks**
+  - Dialogue
+  - Question answering
+  - Summarization
+  - Fact verification
+- **Technology Stacks**
+  - Langchain
+  - LlamaIndex
+  - FlowiseAI
+  - AutoGen
+
+### RAG Prospect
+- **Challenges**
+  - Context Length
+  - Robustness
+  - Hybrid
+  - Role of LLMs
+  - Scaling-laws for RAG
+  - Production-ready RAG
+- **Modality Extension**
+  - Image
+  - Audio
+  - Video
+  - Code
+- **Ecosystem**
+  - Customization
+  - Simplification
+  - Specialization
+
+### The RAG Paradigm
+- Naive RAG
+- Advanced RAG
+- Modular RAG
+
+### Techniques for Better RAG
+- Chunk Optimization
+- Query Rewriting
+- Rerank
+- Iterative Retrieval
+- Recursive Retrieval
+- Adaptive Retrieval
+- Retriever Fine-tuning
+- Generator Fine-tuning
+- Dual Fine-tuning
+
+### Key Issues of RAG
+- What to retrieve
+- When to retrieve
+- How to use retrieval
+
+### Evaluation of RAG
+- **Evaluation Target**
+  - Retrieval Quality
+  - Generation Quality
+- **Evaluation Aspects**
+  - Answer Relevance
+  - Context Relevance
+  - Answer Faithfulness
+  - Noise Robustness
+  - Negation Rejection
+  - Information Integration
+  - Counterfactual Robustness
+- **Evaluation Framework**
+  - Benchmarks
+    - RGB
+    - RECALL
+    - RAGAS
+    - ARES
+  - Tools
+    - TruLens"
+data/image/doc231210997_page2_image1.png,"This image is a visual representation of the evolution and stages of Retrieval-Augmented Generation (RAG) models. The visualization takes the form of a tree with three main branches, each representing a different stage in the RAG pipeline: Pre-training, Fine-tuning, and Inference.
+
+1. **Tree Structure and Timeline**:
+   - The tree is rooted in 2020 and it progresses upwards until 2024.
+   - Significant milestones such as the launches of GPT-3 in 2020 and ChatGPT in 2023 are highlighted on the timeline. 
+   - GPT-4 is projected for 2024.
+
+2. **Branches and Stages**:
+   - **Pre-training Stage** (Left Branch):
+     - Represented in green.
+     - Includes models and technologies like REALM (2020), RETRO, Toolformer, GraphToolformer (2022), InstructRetro, Retro++, Raven, COB, TOC, and InstructionRetor (2023).
+   
+   - **Fine-tuning Stage** (Middle Branch):
+     - Represented in orange.
+     - Includes models and techniques such as DPR, FiD, RAG, Selfmem, REPLUG, AAR, SUGRE, RA-DIT, Self-RAG, Filter-Reranker, SANTA, and UPRISE.
+   
+   - **Inference Stage** (Right Branch):
+     - Represented in blue.
+     - Includes models and methods like ICRALM, KNN-LLM, DSP, GenRead, FABULA, ITRG, RECITE, COK, PKG, PGRA, PRCA, ITER-RETGEN, and KnowledGPT.
+
+3. **Color Codes and Augmentation Stages**:
+   - The branches are color-coded to depict different stages of augmentation:
+     - **Green**: Pre-training
+     - **Orange**: Fine-tuning
+     - **Blue**: Inference
+
+4. **Labels and Annotations**:
+   - Each development within these stages is represented as a node on the branches.
+   - Nodes are labeled with their corresponding model names.
+
+In summary, the image effectively illustrates the progression and branching out of various models and techniques within the Retrieval-Augmented Generation framework from 2020 through projected developments in 2024, highlighting milestones and categorizing them based on the stage of development (pre-training, fine-tuning, and inference)."
+data/image/doc231210997_page12_image1.png,"The image is an organized flowchart diagram that explains various aspects of ""Retrieval-Augmented Generation"" (RAG). It is divided into three main branches with headers:
+
+1. **Retriever ($4)**:
+   - **Better Semantic Representation**:
+     - Chunk Optimization
+     - Fine-tuning Embedding Model
+     - Cites specific papers and works related to these methods.
+  
+   - **Align Queries and Documents**:
+     - Query Rewriting
+     - Embedding Transformation
+     - Plugin Adapter
+     - Cites related works.
+
+   - **Align Retriever and LLM**:
+     - LLM Supervised Training
+     - Cites relevant publications.
+
+2. **Generator ($5)**:
+   - **Post-retrieval with Frozen LLM**:
+     - Information Compression
+     - Rerank
+     - Cites corresponding works and studies.
+
+   - **Fine-tuning LLM for RAG**:
+     - General Optimization Process
+     - Utilizing Contrastive Learning
+     - References associated research publications.
+
+3. **Augmentation Method ($6)**:
+   - **Augmentation Stage**:
+     - Pre-training
+     - Fine-tuning
+     - Inference
+     - Lists sources related to each augmentation stage.
+   
+   - **Augmentation Source**:
+     - Unstructured Data
+     - Structured Data
+     - LLM Generated Content
+     - Cites particular contributions and academic works.
+
+   - **Augmentation Process**:
+     - Once Retrieval
+     - Iterative Retrieval
+     - Recursive Retrieval
+     - Adaptive Retrieval 
+     - Lists references for each method.
+
+Each of these main branches contains subtopics and references specific approaches, methods, and notable academic papers related to them. The diagram uses different colors to distinguish between the three main branches and their detailed elements, with lines connecting related concepts and references."
+data/image/doc231210997_page6_image1.png,"The image contains three columns, each illustrating different architectures or enhancements of Retrieval Augmented Generation (RAG). 
+
+1. **Naive RAG**:
+   - *Components*: User, Query, Documents, Indexing, Retrieval, Prompt, Frozen LLM (Large Language Model), Output.
+   - *Flow*: 
+     * The User provides a Query.
+     * Documents are indexed.
+     * Retrieval occurs, followed by creating a Prompt.
+     * The Prompt is processed by a Frozen LLM, which generates the Output.
+     
+2. **Advanced RAG**:
+   - *Additional Components*: Pre-Retrieval, Post-Retrieval (Rerank, Summary, Fusion).
+   - *Flow*:
+     * The User provides a Query.
+     * Pre-Retrieval operations (such as Query Routing, Query Rewriting, Query Expansion) are executed.
+     * Documents are indexed.
+     * Retrieval occurs.
+     * Post-Retrieval operations include Rerank, Summary, and Fusion.
+     * A Prompt is created and processed by a Frozen LLM, which generates the Output.
+
+3. **Modular RAG**:
+   - *Modules*: Routing, Demonstrate, Rewrite, Memory, Retrieve, Read, Rerank, Search, Predict, Fusion.
+   - *Patterns*:
+     * Naive RAG: Retrieve → Read.
+     * Advanced RAG: Rewrite → Retrieve → Rerank → Read.
+     * DSP (Khattab et al., 2022): Demonstrate → Search → Predict.
+     * ITER-RETGEN (Shao et al., 2023): Retrieve → Read → Retrieve → Read.
+   
+   This column shows an abstract module-based architecture where different components can be connected in various configurable patterns. 
+
+Overall, the image demonstrates increasingly sophisticated approaches to Retrieval Augmented Generation, from a straightforward Naive implementation to more advanced and modular patterns that allow for a versatile configuration of different operations and enhancements."
+data/image/doc231210997_page4_image1.png,"The image is a flowchart that illustrates the process of how a user query is handled using Retrieval-Augmented Generation (RAG). Here’s a breakdown of its contents:
+
+1. **User**: 
+   - The workflow starts with the ""User"" providing an input query.
+
+2. **Input**: 
+   - The query example provided is: ""How do you evaluate the fact that OpenAI's CEO, Sam Altman, went through a sudden dismissal by the board in just three days, and then was rehired by the company, resembling a real-life version of 'Game of Thrones' in terms of power dynamics?""
+
+3. **Indexing**: 
+   - ""Documents"" are processed into ""Chunks"" and ""Vectors"" through embeddings.
+
+4. **Retrieval**: 
+   - Relevant documents related to the query are retrieved. Examples of relevant chunks:
+     - Chunk 1: ""Sam Altman Returns to OpenAI as CEO, Silicon Valley Drama Resembles the 'Zhen Huan' Comedy""
+     - Chunk 2: ""The Drama Concludes? Sam Altman to Return as CEO of OpenAI, Board to Undergo Restructuring""
+     - Chunk 3: ""The Personnel Turmoil at OpenAI Comes to an End: Who Won and Who Lost?""
+
+5. **Generation**: 
+   - The query is combined with the context from relevant documents using a Language Learning Model (LLM). The LLM generates:
+     - Combined context and prompts for further processing.
+
+6. **Output**: 
+   - Two types of answers are displayed:
+     - Without RAG: Limited information, unable to comment on future events regarding the CEO's dismissal and rehiring.
+     - With RAG: Detailed analysis suggesting significant internal disagreements within OpenAI about the company's direction and strategic decisions, noting twists and turns in power struggles and corporate governance.
+
+The flowchart visually demonstrates how the RAG model enhances the quality and detail of answers provided by incorporating relevant external information into the query processing workflow."
+data/image/doc231210997_page18_image1.png,"The image is a conceptual diagram that categorizes different approaches in model interaction and adaptation, specifically focusing on Prompt Engineering and Fine-tuning in a machine learning context. 
+
+The diagram is divided into regions that vary based on the levels of ""External Knowledge Required"" (y-axis) and ""Model Adaptation Required"" (x-axis). Here's a breakdown of the contents:
+
+1. **Axes**:
+   - The y-axis represents the ""External Knowledge Required,"" ranging from Low to High.
+   - The x-axis represents the ""Model Adaptation Required,"" ranging from Low to High.
+
+2. **Classification**:
+   - **Prompt Engineering**:
+     - **Standard Prompt**: requires low external knowledge and low model adaptation.
+     - **Few-shot Prompt**: requires slightly higher external knowledge but still low in model adaptation.
+     - **XoT (e.g., CoT, ToT)**: requires low model adaptation but higher external knowledge.
+     - **Naive RAG**: requires moderate external knowledge and moderate model adaptation, characterized by adding relevant contextual paragraphs.
+     - **Advanced RAG**: requires high external knowledge and moderate-to-high model adaptation, involving index/pre-retrieval/post-retrieval optimization.
+     - **Modular RAG**: requires high external knowledge and high model adaptation, defined as an organic combination of multiple modules.
+
+   - **Fine-tuning**:
+     - Placed across the higher end of model adaptation required.
+     - **Retriever Fine-tuning**: involves fine-tuning retrieval components.
+     - **Collaborative Fine-tuning**: involves collaborative adjustments.
+     - **Generator Fine-tuning**: involves fine-tuning of generation models.
+
+3. **Combined Approach (RAG)**:
+   - Placed centrally but leaning towards high external knowledge and model adaptation requirements.
+   - A combination of Retrieval-Augmented Generation (RAG), prompt engineering, and fine-tuning.
+
+4. **All of the above**:
+   - Represents a holistic approach combining all techniques from prompt engineering to fine-tuning, requiring the highest external knowledge and model adaptation.
+  
+This diagram visually maps out the landscape of strategies in machine learning, differentiating between various methodologies based on their dependence on external knowledge and the level of model adaptation required."
+data/image/doc231210997_page15_image1.png,"The image is a visual representation of the evolution and augmentation stages of retrieval-augmented generation in artificial intelligence (AI) models over a timeline from 2020 to 2024.
+
+**Key Elements:**
+
+1. **Timeline:** 
+   - On the left side, there are key years mentioned: 2020 (GPT-3), 2022, 2023 (ChatGPT), and 2024 (GPT-4).
+  
+2. **Main Processes:**
+   - The image is divided into three main processes: Pre-training (green), Fine-tuning (orange), and Inference (blue).
+
+3. **Branches:**
+   - The processes are depicted with branching structures, where each branch represents a different method or model used in the development of AI technologies.
+
+4. **Key Models/Technologies:**
+   - **Pre-training Models:** Include ToC, InstructRetro, Retro++, GraphToolformer, COG, Retro, ARN, DPR, Atlas, and others.
+   - **Fine-tuning Models:** Include SUGRE, RA-DIT, SelfMem, REPLUG, Filter-Reranker, SANTA, UPRISE, etc.
+   - **Inference Models:** Include GenRead, CREA-ICL, FABULA, ITRQ, IRCOT, RECITE, COK, PKG, PRCA, KnowledGPT, and others.
+
+5. **Augmentation Stages:** 
+   - Represented by color codes: 
+      - Pre-training (Green)
+      - Fine-tuning (Orange)
+      - Inference (Blue)
+
+6. **Augmentation Source:**
+   - Different sources are indicated with highlighted colors:
+     - Unstructured Data (Green)
+     - Structured Data (Yellow)
+     - LLM Generated Content (Purple)
+  
+7. **Augmentation Process:**
+   - Represented by different patterns:
+     - Once Retrieval (Solid Line)
+     - Iterative Retrieval (Dashed Line)
+     - Adaptive Retrieval (Dotted Line)
+     - Recursive Retrieval (Outlined Dashes with Purple)
+
+8. **Additional Notes:**
+   - Some entries are marked with different types of borders representing other processes, indicated with a note at the bottom right corner.
+
+Overall, the image is an intricate diagram emphasizing the progression and various techniques in the workflow of retrieval-augmented generation, highlighting major models and how they fit into the overarching AI development timeline and processes."
